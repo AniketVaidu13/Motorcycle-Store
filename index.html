@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>Brightcycle Bike Shop</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link href="Css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. MAIN NAVIGATION HEADER
+       ========================================== -->
+  <header class="main-header sticky-top">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container-fluid p-0 d-flex align-items-stretch">
+        
+        <div class="header-brand-box d-flex align-items-center">
+          <button class="navbar-toggler border-0 p-0 me-3 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarNav" aria-controls="mainNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list menu-toggle-icon"></i>
+          </button>
+          <a class="navbar-brand d-flex align-items-center m-0" href="#">
+            <img src="Images/logo.png" alt="Brightcycle Bike Shop" class="site-logo">
+          </a>
+        </div>
+
+        <div class="header-right-box d-flex align-items-center flex-grow-1 justify-content-end pe-3 pe-lg-4">
+          <div class="collapse navbar-collapse justify-content-center" id="mainNavbarNav">
+            <ul class="navbar-nav gap-lg-4">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">PAGES</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">ELEMENTS</a></li>
+            </ul>
+          </div>
+
+          <div class="header-actions d-flex align-items-center gap-3 ms-lg-3">
+            <div class="nav-cart-box position-relative">
+              <a href="#" class="nav-action-icon text-dark text-decoration-none" aria-label="Cart">
+                <i class="bi bi-cart3"></i>
+              </a>
+              <span class="cart-badge">2</span>
+            </div>
+
+            <div class="d-lg-none">
+              <a href="#" class="nav-action-icon text-dark text-decoration-none" aria-label="Menu">
+                <i class="bi bi-three-dots-vertical"></i>
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block">
+              <a href="#" class="nav-action-icon text-dark text-decoration-none" aria-label="Sidebar">
+                <i class="bi bi-list fs-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ==========================================
+       2. HERO SLIDER SECTION
+       ========================================== -->
+  <section class="hero-slider-section position-relative overflow-hidden">
+    <div class="hero-yellow-accent d-none d-lg-block">
+      <div class="accent-dots-pattern"></div>
+    </div>
+
+    <div id="heroCarousel" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-indicators hero-dots">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 order-2 order-lg-1 hero-img-col">
+                <img src="Images/Bike-1.png" class="hero-bike-img" alt="Parts For Your Bike">
+              </div>
+              <div class="col-12 col-lg-6 order-1 order-lg-2 hero-text-col">
+                <h1 class="hero-heading">PARTS FOR<br>YOUR BIKE</h1>
+                <p class="hero-para">Easily find and shop for the parts you need.</p>
+                <a href="#" class="hero-btn text-uppercase">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 order-2 order-lg-1 hero-img-col">
+                <img src="Images/swiper-img-1.png" class="hero-bike-img" alt="Place For Bikes">
+              </div>
+              <div class="col-12 col-lg-6 order-1 order-lg-2 hero-text-col">
+                <h1 class="hero-heading">#1 PLACE<br>FOR BIKES</h1>
+                <p class="hero-para">We offer a great variety of motorbikes.</p>
+                <a href="#" class="hero-btn text-uppercase">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 order-2 order-lg-1 hero-img-col">
+                <img src="Images/swiper-img-2.png" class="hero-bike-img" alt="New and Used Motorcycles">
+              </div>
+              <div class="col-12 col-lg-6 order-1 order-lg-2 hero-text-col">
+                <h1 class="hero-heading">NEW & USED<br>MOTORCYCLES</h1>
+                <p class="hero-para">Get any bike at an affordable price.</p>
+                <a href="#" class="hero-btn text-uppercase">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       3. PROMO BANNER SLIDER SECTION
+       ========================================== -->
+  <section class="promo-slider-section">
+    <!-- Mobile (<768px): 1 Card Per Slide -->
+    <div id="promoCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="promo-card">
+            <div class="promo-content">
+              <span class="promo-subtitle">SELECT A BIKE YOU NEED</span>
+              <div class="promo-divider"></div>
+              <h2 class="promo-title">MOTORBIKES</h2>
+              <p class="promo-desc">We offer a wide variety of new and used bikes from widely known brands.</p>
+            </div>
+            <div class="promo-image-box">
+              <img src="Images/bg-image-2.png" alt="Motorbikes" class="promo-img promo-bike-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="promo-card">
+            <div class="promo-content">
+              <span class="promo-subtitle">CLOTHES FOR RIDERS</span>
+              <div class="promo-divider"></div>
+              <h2 class="promo-title">APPAREL</h2>
+              <p class="promo-desc">Check out our massive collection of driving apparel available online at our shop.</p>
+            </div>
+            <div class="promo-image-box">
+              <img src="Images/jacket3.png" alt="Riding Apparel" class="promo-img promo-jacket-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="promo-card">
+            <div class="promo-content">
+              <span class="promo-subtitle">ACCESSORIES</span>
+              <div class="promo-divider"></div>
+              <h2 class="promo-title">GEAR</h2>
+              <p class="promo-desc">We also offer a wide range of accessories and gear for riders regardless of their budget.</p>
+            </div>
+            <div class="promo-image-box">
+              <img src="Images/helmet-2.png" alt="Gear & Helmet" class="promo-img promo-helmet-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-indicators promo-dots">
+        <button type="button" data-bs-target="#promoCarouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#promoCarouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#promoCarouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+
+    <!-- Tablet & Desktop (>=768px): 2 Cards Side-by-Side -->
+    <div id="promoCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-0">
+            <div class="col-6">
+              <div class="promo-card promo-card-bordered">
+                <div class="promo-content">
+                  <span class="promo-subtitle">SELECT A BIKE YOU NEED</span>
+                  <div class="promo-divider"></div>
+                  <h2 class="promo-title">MOTORBIKES</h2>
+                  <p class="promo-desc">We offer a wide variety of new and used bikes from widely known brands.</p>
+                </div>
+                <div class="promo-image-box">
+                  <img src="Images/bg-image-2.png" alt="Motorbikes" class="promo-img promo-bike-img">
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="promo-card">
+                <div class="promo-content">
+                  <span class="promo-subtitle">CLOTHES FOR RIDERS</span>
+                  <div class="promo-divider"></div>
+                  <h2 class="promo-title">APPAREL</h2>
+                  <p class="promo-desc">Check out our massive collection of driving apparel available online at our shop.</p>
+                </div>
+                <div class="promo-image-box">
+                  <img src="Images/jacket3.png" alt="Riding Apparel" class="promo-img promo-jacket-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col-6">
+              <div class="promo-card promo-card-bordered">
+                <div class="promo-content">
+                  <span class="promo-subtitle">CLOTHES FOR RIDERS</span>
+                  <div class="promo-divider"></div>
+                  <h2 class="promo-title">APPAREL</h2>
+                  <p class="promo-desc">Check out our massive collection of driving apparel available online at our shop.</p>
+                </div>
+                <div class="promo-image-box">
+                  <img src="Images/jacket3.png" alt="Riding Apparel" class="promo-img promo-jacket-img">
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="promo-card">
+                <div class="promo-content">
+                  <span class="promo-subtitle">ACCESSORIES</span>
+                  <div class="promo-divider"></div>
+                  <h2 class="promo-title">GEAR</h2>
+                  <p class="promo-desc">We also offer a wide range of accessories and gear for riders regardless of their budget.</p>
+                </div>
+                <div class="promo-image-box">
+                  <img src="Images/helmet-2.png" alt="Gear & Helmet" class="promo-img promo-helmet-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-indicators promo-dots">
+        <button type="button" data-bs-target="#promoCarouselDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#promoCarouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       4. SPECIAL OFFERS SECTION
+       ========================================== -->
+  <section class="special-offers-section py-5">
+    <div class="container-fluid container-xl px-3 px-md-4">
+      <div class="text-center section-header mb-5">
+        <span class="offers-subtitle text-uppercase">List of the Latest Promotions</span>
+        <h2 class="offers-title text-uppercase mt-2">Special Offers</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-12 col-lg-6">
+          <div class="offer-card">
+            <div class="offer-card-top">
+              <div class="offer-info">
+                <h3 class="offer-heading">2019<br>YEAR<br>MODELS</h3>
+                <div class="discount-box">
+                  <span class="discount-number">20</span>
+                  <div class="discount-unit">
+                    <span class="percent">%</span>
+                    <span class="off-text">OFF</span>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-img-box">
+                <img src="Images/bike-2.jpg" alt="2019 Year Model" class="offer-bike-img">
+              </div>
+            </div>
+            <div class="offer-card-bottom">
+              <h4 class="offer-bottom-title">Kawasaki, Honda, and Yamaha</h4>
+              <p class="offer-bottom-subtitle mb-0">available while stocks last</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-lg-6">
+          <div class="offer-card">
+            <div class="offer-card-top">
+              <div class="offer-info">
+                <div class="discount-box mb-2">
+                  <span class="discount-number-small">$200</span>
+                  <span class="off-text-inline">OFF</span>
+                </div>
+                <h3 class="offer-heading">GRAB YOUR<br>HONDA</h3>
+              </div>
+              <div class="offer-img-box">
+                <img src="Images/bike-3-1.png" alt="Honda CBR1000RR" class="offer-bike-img offer-bike-rear">
+              </div>
+            </div>
+            <div class="offer-card-bottom">
+              <h4 class="offer-bottom-title">Honda CBR1000RR</h4>
+              <p class="offer-bottom-subtitle mb-0">on sale until June 15</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       5. FEATURED PRODUCTS SECTION
+       ========================================== -->
+  <section class="featured-products-section py-5 bg-white">
+    <div class="container">
+      <div class="text-center section-header mb-5">
+        <span class="section-subtitle text-uppercase">Top Products From Our Shop</span>
+        <h2 class="section-title text-uppercase mt-2">Featured Products</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center justify-content-md-start justify-content-lg-center">
+        <!-- Product 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="product-card h-100">
+            <div class="product-card-body">
+              <div class="product-card-wrap">
+                <span class="product-category text-uppercase">Motorcycles</span>
+                <h3 class="product-name">Honda CBR300R</h3>
+                <div class="product-img-box">
+                  <img src="Images/bike-4.png" alt="Honda CBR300R" class="img-fluid">
+                </div>
+                <div class="product-hover-details">
+                  <div class="star-rating d-flex justify-content-center gap-1 mb-3">
+                    <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                  </div>
+                  <p class="product-desc mb-3">Honda’s CBR300R has sportbike credentials designed to satisfy any rider.</p>
+                  <button type="button" class="btn-add-to-cart text-uppercase mb-2">Add to Cart</button>
+                  <a href="#" class="view-details-link text-uppercase d-block">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-footer d-flex justify-content-between align-items-center">
+              <span class="product-price">$4500.00</span>
+              <button type="button" class="btn-share border-0 bg-transparent p-0" aria-label="Share"><i class="bi bi-share"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="product-card h-100">
+            <div class="product-card-body">
+              <div class="product-card-wrap">
+                <span class="product-category text-uppercase">Helmets</span>
+                <h3 class="product-name">Klim Men's F4 Snocross</h3>
+                <div class="product-img-box">
+                  <img src="Images/helmet-1.png" alt="Klim Helmet" class="img-fluid">
+                </div>
+                <div class="product-hover-details">
+                  <div class="star-rating d-flex justify-content-center gap-1 mb-3">
+                    <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                  </div>
+                  <p class="product-desc mb-3">This Men's F4 Snocross Helmet by Klim is a perfect addition to your riding image.</p>
+                  <button type="button" class="btn-add-to-cart text-uppercase mb-2">Add to Cart</button>
+                  <a href="#" class="view-details-link text-uppercase d-block">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-footer d-flex justify-content-between align-items-center">
+              <span class="product-price">$250.00</span>
+              <button type="button" class="btn-share border-0 bg-transparent p-0" aria-label="Share"><i class="bi bi-share"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="product-card h-100">
+            <div class="product-card-body">
+              <div class="product-card-wrap">
+                <span class="product-category text-uppercase">Clothing</span>
+                <h3 class="product-name">Motorcycle Riding Jacket</h3>
+                <div class="product-img-box">
+                  <img src="Images/jacket.png" alt="Riding Jacket" class="img-fluid">
+                </div>
+                <div class="product-hover-details">
+                  <div class="star-rating d-flex justify-content-center gap-1 mb-3">
+                    <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                  </div>
+                  <p class="product-desc mb-3">Choose this jacket to add to your riding apparel & enhance your experience.</p>
+                  <button type="button" class="btn-add-to-cart text-uppercase mb-2">Add to Cart</button>
+                  <a href="#" class="view-details-link text-uppercase d-block">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-footer d-flex justify-content-between align-items-center">
+              <span class="product-price">$150.00</span>
+              <button type="button" class="btn-share border-0 bg-transparent p-0" aria-label="Share"><i class="bi bi-share"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="#" class="btn-all-products text-uppercase">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       6. ABOUT US SECTION
+       ========================================== -->
+  <section class="about-us-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-12 col-lg-6">
+          <div class="about-content">
+            <span class="about-subtitle text-uppercase">A Few Words About Us</span>
+            <h2 class="about-title text-uppercase mt-2">#1 Motorbike<br class="d-none d-sm-inline"> Shop</h2>
+            <p class="about-desc mt-3 mb-4">
+              Brightcycle bike shop is one of America’s best motorcycle shops that has been offering premium motorcycles, service, and parts since 1999.
+            </p>
+            <a href="#" class="about-btn text-uppercase">Learn More</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="about-img-box text-center">
+            <img class="img-fluid about-img shadow-sm" src="Images/jacket2.jpg" alt="About Brightcycle Motorcycle Shop" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       7. FEATURES SECTION
+       ========================================== -->
+  <section class="features-section py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center border-0 p-4 py-5 shadow-sm">
+            <div class="card-body p-0">
+              <div class="mb-4"><i class="bi bi-reply-fill feature-icon"></i></div>
+              <h3 class="feature-title text-uppercase mb-3">Reasonable Prices</h3>
+              <p class="feature-text mb-0">If you didn’t like your bike, you can always return it during the first 2 weeks of its usage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center border-0 p-4 py-5 shadow-sm">
+            <div class="card-body p-0">
+              <div class="mb-4"><i class="bi bi-person-fill-check feature-icon"></i></div>
+              <h3 class="feature-title text-uppercase mb-3">Professional Team</h3>
+              <p class="feature-text mb-0">Our sales managers and consultants are always glad to help you choose a bike.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center border-0 p-4 py-5 shadow-sm">
+            <div class="card-body p-0">
+              <div class="mb-4"><i class="bi bi-truck feature-icon"></i></div>
+              <h3 class="feature-title text-uppercase mb-3">Free Delivery</h3>
+              <p class="feature-text mb-0">Our delivery service guarantees quick and secure delivery of your favorite motorcycle.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center border-0 p-4 py-5 shadow-sm">
+            <div class="card-body p-0">
+              <div class="mb-4"><i class="bi bi-cash-coin feature-icon"></i></div>
+              <h3 class="feature-title text-uppercase mb-3">Payment Methods</h3>
+              <p class="feature-text mb-0">We offer a variety of payment methods including cash, credit cards, and cheques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STATS COUNTER SECTION -->
+<section class="stats-section py-5 bg-white text-center">
+  <div class="container">
+    <div class="row g-5 g-md-0 justify-content-center align-items-center">
+
+      <!-- Stat 1 -->
+      <div class="col-12 col-md-4">
+        <div class="stat-item">
+          <span class="stat-number" data-target="450">450</span>
+          <p class="stat-label mb-0">Motorcycle Models</p>
+        </div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="col-12 col-md-4">
+        <div class="stat-item">
+          <span class="stat-number" data-target="78">78</span>
+          <p class="stat-label mb-0">Awards</p>
+        </div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="col-12 col-md-4">
+        <div class="stat-item">
+          <div>
+            <span class="stat-number" data-target="600">600</span><sup class="stat-plus">+</sup>
+          </div>
+          <p class="stat-label mb-0">Satisfied Customers</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ==========================================
+       9. TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="testimonials-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-7 col-lg-6 mb-4 mb-md-0">
+          <div class="testimonial-content pe-lg-4">
+            <span class="testimonial-subtitle text-uppercase">Testimonials</span>
+            <h2 class="testimonial-title text-uppercase mt-2 mb-4">What Our Clients Say</h2>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <svg class="quote-icon" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="quoteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff6543" />
+                    <stop offset="100%" stop-color="#ffc83b" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 15.6C0 7.8 5.6 1.8 13.4 0.2L14.4 2.8C8.8 4.6 6.2 8.4 5.8 11.8C7.4 11 9.2 10.8 11 11.6C13.6 12.8 15 15.6 14.6 18.6C14 22.4 10.6 25.2 6.6 25C2.8 24.8 0 21.6 0 15.6ZM17.4 15.6C17.4 7.8 23 1.8 30.8 0.2L31.8 2.8C26.2 4.6 23.6 8.4 23.2 11.8C24.8 11 26.6 10.8 28.4 11.6C31 12.8 32.4 15.6 32 18.6C31.4 22.4 28 25.2 24 25C20.2 24.8 17.4 21.6 17.4 15.6Z" fill="url(#quoteGrad)" />
+              </svg>
+              <p class="testimonial-text mb-0">
+                I am extremely pleased with the process of purchasing my new Honda Africa Twin from Brightcycle. I knew exactly what I wanted so it was easy to choose and purchase this motorcycle.
+              </p>
+            </div>
+
+            <div class="author-box">
+              <div class="d-flex align-items-center mb-1">
+                <span class="author-line"></span>
+                <span class="author-name text-uppercase">Helen Russell</span>
+              </div>
+              <div class="author-role">Regular Client</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-6">
+          <div class="avatars-cloud">
+            <img src="Images/client-1.jpg" alt="Helen Russell" class="avatar-item avatar-active">
+            <img src="Images/client-2.jpg" alt="Client 2" class="avatar-item avatar-2">
+            <img src="Images/client-3.jpg" alt="Client 3" class="avatar-item avatar-3">
+            <img src="Images/client-4.jpg" alt="Client 4" class="avatar-item avatar-4">
+            <img src="Images/client-5.jpg" alt="Client 5" class="avatar-item avatar-5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       10. BLOG SECTION
+       ========================================== -->
+  <section class="blog-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-subtitle text-uppercase mb-2">Our Blog</span>
+        <h2 class="section-title text-uppercase">Latest Posts</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center text-start">
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="post-card">
+            <div class="post-img-wrapper position-relative mb-3">
+              <span class="post-badge text-uppercase">News</span>
+              <img src="Images/bike-5.jpg" alt="Harley Livewire" class="img-fluid">
+            </div>
+            <h3 class="post-title text-uppercase mb-2">Motorcycle Security and Anti-Theft: Ways to Save Your Bike</h3>
+            <p class="post-date text-uppercase mb-0">March 12, 2019</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="post-card">
+            <div class="post-img-wrapper position-relative mb-3">
+              <span class="post-badge text-uppercase">News</span>
+              <img src="Images/bike-6.jpg" alt="Silver Motorcycle" class="img-fluid">
+            </div>
+            <h3 class="post-title text-uppercase mb-2">Motorcycle Security and Anti-Theft: Ways to Save Your Bike</h3>
+            <p class="post-date text-uppercase mb-0">April 15, 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       11. CONTACT US BANNER
+       ========================================== -->
+  <section class="contact-banner-section text-center py-5">
+    <div class="container">
+      <div class="mx-auto" style="max-width: 460px;">
+        <span class="section-subtitle text-uppercase mb-2">Have a Question?</span>
+        <h2 class="section-title text-uppercase mb-3">Contact Us Now</h2>
+        <p class="custom-para mb-4">We are always happy to answer all your questions.</p>
+        <a href="#contact" class="btn btn-gradient text-uppercase">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       12. FULL-WIDTH GALLERY STRIP
+       ========================================== -->
+  <section class="gallery-section my-0">
+    <div id="galleryCarousel" class="carousel slide gallery-carousel" data-bs-ride="false">
+      <div class="carousel-inner position-relative">
+        <div class="carousel-item active">
+          <img src="Images/man-w-bike.jpg" class="d-block w-100" alt="Motorcycle Rider 1">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/bike-7.jpg" class="d-block w-100" alt="Motorcycle Rider 2">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/bike-8.jpg" class="d-block w-100" alt="Motorcycle Rider 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/bike-9.jpg" class="d-block w-100" alt="Motorcycle Rider 4">
+        </div>
+
+        <div class="slider-zoom-btn position-absolute top-50 start-50 translate-middle">
+          <i class="bi bi-plus"></i>
+        </div>
+      </div>
+
+      <div class="carousel-indicators carousel-indicators-dots">
+        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       13. SPEECH-BUBBLE CONTACT (Mobile Only)
+       ========================================== -->
+  <section class="my-5 d-flex d-md-none justify-content-center">
+    <div class="contact-info-bubble p-4">
+      <div class="d-flex align-items-start gap-3 mb-3">
+        <i class="bi bi-geo-alt-fill bubble-icon"></i>
+        <div class="bubble-text">652 Main Road, Apt 12<br>New York, USA 10033</div>
+      </div>
+      <div class="d-flex align-items-center gap-3 mb-3">
+        <i class="bi bi-phone bubble-icon"></i>
+        <div class="bubble-text">+1 800 123 1234</div>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-envelope bubble-icon"></i>
+        <div class="bubble-text">info@demolink.org</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       14. GOOGLE MAP SECTION
+       ========================================== -->
+  <section class="map-section">
+    <iframe class="w-100 d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1779520447036!5m2!1sen!2sin" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <!-- ==========================================
+       15. FOOTER SECTION
+       ========================================== -->
+  <footer class="main-footer pt-5">
+    <div class="container pb-5">
+      <div class="row g-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="brand-logo-text">
+            <img class="img-fluid w-75 mb-3" src="Images/logo-2.png" alt="Brightcycle Logo" />
+          </div>
+          <p class="footer-text mb-4 pe-lg-3">
+            Brightcycle bike shop offers a wide variety of motorbikes by recognized manufacturers as well as replacement parts and accessories for bike riders.
+          </p>
+          <div class="social-links d-flex gap-4 mb-4">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+          <p class="copyright-text mb-0">
+            &copy; 2026. All Rights Reserved. <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <h4 class="footer-title">Opening Hours</h4>
+          <ul class="opening-hours-list pe-lg-3">
+            <li><span class="day">Mon-Thu</span><span class="time">7 am - 9 pm</span></li>
+            <li><span class="day">Friday</span><span class="time">7 am - 7 pm</span></li>
+            <li><span class="day">Saturday</span><span class="time">7 am - 5 pm</span></li>
+            <li><span class="day">Sunday</span><span class="time">Closed</span></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <h4 class="footer-title">Motivation</h4>
+          <p class="footer-text mb-4">
+            Thanks to your wonderful team, this shop has become my #1 place for motorbike shopping.
+          </p>
+          <div class="d-flex align-items-center mb-4">
+            <span class="author-divider me-3"></span>
+            <span class="author-name">Amelia Smith</span>
+          </div>
+          <div class="carousel-dots">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-footer py-4">
+      <div class="container">
+        <div class="footer-nav d-flex flex-wrap justify-content-center justify-content-md-start gap-4 gap-md-5">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Shop</a>
+          <a href="#">Elements</a>
+          <a href="#">Blog</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Number Count-Up Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const statsSection = document.querySelector(".stats-section");
+      const statNumbers = document.querySelectorAll(".stat-number");
+
+      if (!statsSection || statNumbers.length === 0) return;
+
+      // Helper to generate a random number with the exact digit length
+      const getRandomNumber = (digits) => {
+        const min = Math.pow(10, digits - 1);
+        const max = Math.pow(10, digits) - 1;
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      };
+
+      const runCounterAnimation = (el) => {
+        const target = parseInt(el.getAttribute("data-target"), 10);
+        const digits = target.toString().length;
+        const duration = 1800; // 1.8 seconds
+        const startTime = performance.now();
+        let lastShuffle = 0;
+
+        const step = (now) => {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          // Phase 1: Rapid shuffle (first 75% of animation)
+          if (progress < 0.75) {
+            if (now - lastShuffle > 40) {
+              el.textContent = getRandomNumber(digits);
+              lastShuffle = now;
+            }
+            requestAnimationFrame(step);
+          } 
+          // Phase 2: Decelerate and resolve to final number (last 25%)
+          else if (progress < 1) {
+            const easeProgress = (progress - 0.75) / 0.25;
+            el.textContent = Math.floor(target * 0.85 + target * 0.15 * easeProgress);
+            requestAnimationFrame(step);
+          } 
+          // Phase 3: Exact target value
+          else {
+            el.textContent = target;
+          }
+        };
+
+        requestAnimationFrame(step);
+      };
+
+      // Set numbers to 0 initially and trigger animation when visible
+      let animated = false;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !animated) {
+            animated = true;
+            statNumbers.forEach((el) => {
+              el.textContent = "0";
+              runCounterAnimation(el);
+            });
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.15 });
+
+      observer.observe(statsSection);
+    });
+  </script>
+
+
+</body>
+</html>
